@@ -248,49 +248,72 @@ button {
 .avatar-stage {
   position: relative;
   min-height: 330px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 54px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: linear-gradient(145deg,color-mix(in srgb,var(--blue) 10%,transparent),transparent 50%),var(--surface);
 }
 
-.avatar-grid {
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(color-mix(in srgb,var(--line) 55%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 55%,transparent) 1px,transparent 1px);
-  background-size: 30px 30px;
-  mask-image: linear-gradient(to bottom,black,transparent);
-}
 
-.avatar-ring {
-  position: absolute;
-  width: 230px;
-  height: 230px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-}
 
-.avatar {
+.avatar-photo {
+  position: relative;
   z-index: 2;
-  display: grid;
-  place-items: center;
-  width: 130px;
-  height: 130px;
+
+  width: 184px;
+  height: 184px;
+
+  overflow: hidden;
   border-radius: 50%;
-  background: var(--ink);
-  color: var(--bg);
-  box-shadow: 0 0 0 12px color-mix(in srgb,var(--blue) 12%,transparent);
-  font: 500 2rem 'IBM Plex Mono',monospace;
+  border: 1px solid color-mix(in srgb, var(--ink) 16%, var(--line));
+
+  background: var(--surface);
+
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--blue) 8%, transparent);
+
+  transform: translateY(-22px);
 }
 
-.avatar-stage>span {
+.avatar-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+
+  object-position: center 32%;
+}
+
+.avatar-info {
   position: absolute;
-  right: 14px;
-  bottom: 10px;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  text-align: center;
+}
+
+.avatar-info strong {
+  color: var(--ink);
+  font-size: .95rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.avatar-info span {
   color: var(--muted);
-  font: 400 .65rem 'IBM Plex Mono',monospace;
+  font: 400 .62rem 'IBM Plex Mono', monospace;
+  letter-spacing: .05em;
   text-transform: uppercase;
 }
 
@@ -318,10 +341,6 @@ button {
   font-size: .82rem;
   font-weight: 700;
 }
-
-
-
-
 
 .tech-overview {
   display: grid;
@@ -1371,9 +1390,9 @@ html[data-theme="dark"] .client-brand {
   }
 
   .profile-panel {
-    max-width: 460px;
-    padding-left: 0;
-    border-left: 0;
+    max-width: 320px;
+    padding-left: 24px;
+    border-left: 1px solid var(--line);
   }
 
   .project {
