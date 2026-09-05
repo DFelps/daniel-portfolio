@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="pt-BR" data-lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Daniel Siqueira — Full Stack Developer. Desenvolvimento web, bancos de dados, performance e infraestrutura.">
+  <meta name="theme-color" content="#f4f2ec">
+  <title>Daniel Siqueira — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top"><span class="brand-badge">DS</span><span>Daniel Siqueira</span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+        <a href="#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a>
+        <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+        <a href="#stack" data-pt="Conhecimentos" data-en="Skills">Conhecimentos</a>
+        <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="lang-toggle" class="icon-button" type="button" aria-label="Switch language">EN</button>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="Alternar tema">◐</button>
+        <button id="menu-toggle" class="menu-button" type="button" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+      <a href="#experiencia" data-pt="Experiência" data-en="Experience">Experiência</a>
+      <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+      <a href="#stack" data-pt="Conhecimentos" data-en="Skills">Conhecimentos</a>
+      <a href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-pt="FULL STACK · PERFORMANCE · DADOS · CLOUD"
+            data-en="FULL STACK · PERFORMANCE · DATA · CLOUD">FULL STACK · PERFORMANCE · DADOS · CLOUD</p>
+          <h1><span data-pt="Desenvolvimento Full Stack" data-en="Full Stack development">Desenvolvimento Full
+              Stack</span><em data-pt="da aplicação à infraestrutura." data-en="from application to infrastructure.">da
+              aplicação à infraestrutura.</em></h1>
+          <p class="hero-lead"
+            data-pt="Atuo com aplicações web, bancos de dados, performance, cache e cloud, participando tanto do desenvolvimento quanto da manutenção de ambientes em produção."
+            data-en="I work with web applications, databases, performance, caching and cloud, taking part in both development and the maintenance of production environments.">
+            Atuo com aplicações web, bancos de dados, performance, cache e cloud, participando tanto do desenvolvimento
+            quanto da manutenção de ambientes em produção.</p>
+          <div class="hero-proof">
+            <div><strong data-pt="5 anos de experiência" data-en="5 years of experience">5 anos de
+                experiência</strong><span data-pt="desenvolvimento Full Stack"
+                data-en="Full Stack development">desenvolvimento Full Stack</span></div>
+            <div><strong data-pt="Aplicações em produção" data-en="Production applications">Aplicações em
+                produção</strong><span data-pt="desenvolvimento, manutenção e performance"
+                data-en="development, maintenance and performance">desenvolvimento, manutenção e performance</span>
+            </div>
+            <div><strong data-pt="Web · Dados · Cloud" data-en="Web · Data · Cloud">Web · Dados · Cloud</strong><span
+                data-pt="atuação em diferentes camadas do sistema"
+                data-en="work across different layers of the system">atuação em diferentes camadas do sistema</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#projetos" data-pt="Ver projetos" data-en="View projects">Ver projetos</a>
+            <a class="button secondary" href="https://github.com/DFelps" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel">
+          <div class="avatar-stage">
+            <div class="avatar-grid"></div>
+            <div class="avatar-ring"></div>
+            <div class="avatar">DS</div>
+            <span data-pt="avatar temporário" data-en="temporary avatar">avatar temporário</span>
+          </div>
+          <dl class="profile-meta">
+            <div>
+              <dt data-pt="Base" data-en="Location">Base</dt>
+              <dd data-pt="Cruzeiro, SP · Brasil" data-en="Cruzeiro, SP · Brazil">Cruzeiro, SP · Brasil</dd>
+            </div>
+            <div>
+              <dt data-pt="Atuação" data-en="Role">Atuação</dt>
+              <dd>Full Stack Developer</dd>
+            </div>
+            <div>
+              <dt data-pt="Foco técnico" data-en="Technical focus">Foco técnico</dt>
+              <dd data-pt="Web · Dados · Infra" data-en="Web · Data · Infra">Web · Dados · Infra</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+      <!-- Resumo de tecnologias -->
+      <div class="container tech-overview" aria-label="Tecnologias principais">
+        <div class="tech-group">
+          <span class="tech-group-label" data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</span>
+
+          <div class="tech-items">
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/php" alt="" aria-hidden="true">PHP</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/typescript" alt="" aria-hidden="true">TypeScript</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/javascript" alt="" aria-hidden="true">JavaScript</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/python" alt="" aria-hidden="true">Python</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/ruby" alt="" aria-hidden="true">Ruby</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/laravel" alt="" aria-hidden="true">Laravel</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/rubyonrails" alt="" aria-hidden="true">Ruby on Rails</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/wordpress" alt="" aria-hidden="true">WordPress</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/vuedotjs" alt="" aria-hidden="true">Vue</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/react" alt="" aria-hidden="true">React</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">Svelte</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/nextdotjs/000/fff" alt="" aria-hidden="true">Next.js</span>
+          </div>
+        </div>
+
+        <div class="tech-group">
+          <span class="tech-group-label" data-pt="Dados" data-en="Data">Dados</span>
+
+          <div class="tech-items">
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/mysql" alt="" aria-hidden="true">MySQL</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/postgresql" alt="" aria-hidden="true">PostgreSQL</span>
+            <span class="tech-badge"><img src="assets/icons/sql-server.svg" alt="" aria-hidden="true">SQL Server</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/sqlite" alt="" aria-hidden="true">SQLite</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/redis" alt="" aria-hidden="true">Redis</span>
+          </div>
+        </div>
+
+        <div class="tech-group">
+          <span class="tech-group-label" data-pt="Ambiente" data-en="Environment">Ambiente</span>
+
+          <div class="tech-items">
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/docker" alt="" aria-hidden="true">Docker</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/linux" alt="" aria-hidden="true">Linux</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/git" alt="" aria-hidden="true">Git</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/googlecloud" alt="" aria-hidden="true">GCP</span>
+            <span class="tech-badge"><img src="assets/icons/aws.svg" alt="" aria-hidden="true">AWS</span>
+            <span class="tech-badge"><img src="https://cdn.simpleicons.org/cloudflare" alt="" aria-hidden="true">Cloudflare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about-section">
+      <div class="container">
+        <div class="section-heading"><span>01</span><span data-pt="Sobre" data-en="About">Sobre</span></div>
+        <div class="about-grid">
+          <h2 data-pt="Uma visão ponta a ponta da aplicação." data-en="An end-to-end view of the application.">Uma visão
+            ponta a ponta da aplicação.</h2>
+          <div class="prose">
+            <p class="lead"
+              data-pt="Atuo entre frontend, backend, banco de dados e infraestrutura, acompanhando a aplicação além da entrega de uma funcionalidade."
+              data-en="I work across frontend, backend, databases and infrastructure, following the application beyond the delivery of a feature.">
+              Atuo entre frontend, backend, banco de dados e infraestrutura, acompanhando a aplicação além da entrega de
+              uma funcionalidade.</p>
+            <p data-pt="No dia a dia, isso envolve desenvolver integrações, investigar gargalos, analisar consultas, trabalhar com cache, lidar com ambientes em nuvem e dar manutenção em sistemas em produção."
+              data-en="Day to day, that involves building integrations, investigating bottlenecks, analyzing queries, working with caching, dealing with cloud environments and maintaining production systems.">
+              No dia a dia, isso envolve desenvolver integrações, investigar gargalos, analisar consultas, trabalhar com
+              cache, lidar com ambientes em nuvem e dar manutenção em sistemas em produção.</p>
+            <p data-pt="Gosto de entender como as partes se conectam para conseguir resolver problemas sem olhar apenas para uma camada isolada."
+              data-en="I like understanding how the parts connect so I can solve problems without looking at only one isolated layer.">
+              Gosto de entender como as partes se conectam para conseguir resolver problemas sem olhar apenas para uma
+              camada isolada.</p>
+            <div class="inline-links"><a href="https://github.com/DFelps" target="_blank" rel="noreferrer">GitHub
+                ↗</a><a href="https://www.linkedin.com/in/daniel-siqueira-a91aa9203/" data-pt="LinkedIn ↗" data-en="LinkedIn ↗">LinkedIn ↗</a><a href="#"
+                data-pt="Currículo ↓" data-en="Resume ↓">Currículo ↓</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section experience-section">
+      <div class="container">
+        <div class="section-heading"><span>02</span><span data-pt="Experiência" data-en="Experience">Experiência</span>
+        </div>
+
+        <div class="experience-intro">
+          <div>
+            <h2 data-pt="Experiência em aplicações reais e ambientes de produção."
+              data-en="Experience with real applications and production environments.">Experiência em aplicações reais e
+              ambientes de produção.</h2>
+          </div>
+          <p data-pt="Atuo como Full Stack Developer no desenvolvimento e manutenção de aplicações, trabalhando a partir das demandas dos clientes e das necessidades de cada projeto. Além das entregas de novas funcionalidades, também investigo e resolvo problemas que aparecem em produção, envolvendo performance, bancos de dados, cache, integrações e infraestrutura."
+            data-en="I work as a Full Stack Developer developing and maintaining applications based on client requests and the needs of each project. In addition to delivering new features, I also investigate and solve production issues involving performance, databases, caching, integrations and infrastructure.">
+            Atuo como Full Stack Developer no desenvolvimento e manutenção de aplicações, trabalhando a partir das
+            demandas dos clientes e das necessidades de cada projeto. Além das entregas de novas funcionalidades, também
+            investigo e resolvo problemas que aparecem em produção, envolvendo performance, bancos de dados, cache,
+            integrações e infraestrutura.</p>
+        </div>
+
+        <div class="experience-layout">
+          <div class="experience-role">
+            <div class="role-top"><span>2022 — <span data-pt="Atual" data-en="Present">Atual</span></span><span
+                data-pt="Experiência profissional" data-en="Professional experience">Experiência profissional</span>
+            </div>
+            <h3>Full Stack Developer</h3>
+            <p data-pt="Desenvolvimento e manutenção de aplicações web, portais e integrações, trabalhando a partir das demandas de cada projeto e dando suporte também ao que acontece em produção."
+              data-en="Development and maintenance of web applications, portals and integrations, working from each project’s requirements and also supporting what happens in production.">
+              Desenvolvimento e manutenção de aplicações web, portais e integrações, trabalhando a partir das demandas
+              de cada projeto e dando suporte também ao que acontece em produção.</p>
+          </div>
+
+          <div class="experience-capabilities">
+            <article><span>01</span>
+              <div>
+                <h3 data-pt="Desenvolvimento de funcionalidades" data-en="Feature development">Desenvolvimento de
+                  funcionalidades</h3>
+                <p data-pt="Implementação de novas funcionalidades, ajustes em sistemas existentes, integrações com APIs e manutenção de projetos em PHP, WordPress, JavaScript e TypeScript."
+                  data-en="Implementation of new features, changes to existing systems, API integrations and maintenance of projects using PHP, WordPress, JavaScript and TypeScript.">
+                  Implementação de novas funcionalidades, ajustes em sistemas existentes, integrações com APIs e
+                  manutenção de projetos em PHP, WordPress, JavaScript e TypeScript.</p>
+              </div>
+            </article>
+            <article><span>02</span>
+              <div>
+                <h3 data-pt="Performance e banco de dados" data-en="Performance and databases">Performance e banco de
+                  dados</h3>
+                <p data-pt="Investigação de lentidão e gargalos, análise de consultas, índices, WP_Query, Redis/object cache e otimizações relacionadas ao comportamento da aplicação."
+                  data-en="Investigation of slowness and bottlenecks, query and index analysis, WP_Query, Redis/object cache and optimizations related to application behavior.">
+                  Investigação de lentidão e gargalos, análise de consultas, índices, WP_Query, Redis/object cache e
+                  otimizações relacionadas ao comportamento da aplicação.</p>
+              </div>
+            </article>
+            <article><span>03</span>
+              <div>
+                <h3 data-pt="Infraestrutura e ambientes" data-en="Infrastructure and environments">Infraestrutura e
+                  ambientes</h3>
+                <p data-pt="Uso de Docker, Linux, GCP, GKE, Cloud SQL, AWS e Cloudflare para acompanhar ambientes, investigar problemas e dar suporte às aplicações em produção."
+                  data-en="Use of Docker, Linux, GCP, GKE, Cloud SQL, AWS and Cloudflare to work with environments, investigate issues and support production applications.">
+                  Uso de Docker, Linux, GCP, GKE, Cloud SQL, AWS e Cloudflare para acompanhar ambientes, investigar
+                  problemas e dar suporte às aplicações em produção.</p>
+              </div>
+            </article>
+            <article><span>04</span>
+              <div>
+                <h3 data-pt="Produção e resolução de problemas" data-en="Production and troubleshooting">Produção e
+                  resolução de problemas</h3>
+                <p data-pt="Troubleshooting, correção de incidentes, deploys, autenticação, MFA, proteção de endpoints e rotinas necessárias para manter os sistemas funcionando."
+                  data-en="Troubleshooting, incident resolution, deployments, authentication, MFA, endpoint protection and the routines needed to keep systems running.">
+                  Troubleshooting, correção de incidentes, deploys, autenticação, MFA, proteção de endpoints e rotinas
+                  necessárias para manter os sistemas funcionando.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="client-block">
+          <div class="client-heading">
+            <div>
+              <span class="client-kicker" data-pt="MARCAS E PROJETOS" data-en="BRANDS & PROJECTS">
+                MARCAS E PROJETOS
+              </span>
+
+              <h3
+                data-pt="Alguns produtos e marcas em que participei de entregas técnicas."
+                data-en="Some products and brands where I contributed to technical deliveries."
+              >
+                Alguns produtos e marcas em que participei de entregas técnicas.
+              </h3>
+            </div>
+
+            <p
+              data-pt="Atuação em desenvolvimento, manutenção, performance, infraestrutura ou suporte técnico, variando conforme o projeto."
+              data-en="Work across development, maintenance, performance, infrastructure or technical support, depending on the project."
+            >
+              Atuação em desenvolvimento, manutenção, performance, infraestrutura ou suporte técnico, variando conforme o projeto.
+            </p>
+          </div>
+
+          
+<div class="client-grid" aria-label="Marcas e projetos">
+            <article class="client-card client-card--estadao">
+              <div class="client-logo">
+                <img
+                  class="client-brand client-brand--estadao"
+                  src="assets/clients/estadao.png"
+                  alt="Estadão"
+                >
+              </div>
+
+              <span
+                class="client-name"
+                data-pt="Estadão"
+                data-en="Estadão"
+              >
+                Estadão
+              </span>
+            </article>
+
+            <article class="client-card client-card--jovem-pan">
+              <div class="client-logo">
+                <img
+                  class="client-brand client-brand--jovem-pan"
+                  src="assets/clients/jovem-pan.png"
+                  alt="Jovem Pan"
+                >
+              </div>
+
+              <span
+                class="client-name"
+                data-pt="Jovem Pan"
+                data-en="Jovem Pan"
+              >
+                Jovem Pan
+              </span>
+            </article>
+
+            <article class="client-card client-card--o-antagonista">
+              <div class="client-logo">
+                <img
+                  class="client-brand client-brand--o-antagonista"
+                  src="assets/clients/o-antagonista.png"
+                  alt="O Antagonista"
+                >
+              </div>
+
+              <span
+                class="client-name"
+                data-pt="O Antagonista"
+                data-en="O Antagonista"
+              >
+                O Antagonista
+              </span>
+            </article>
+
+            <article class="client-card client-card--r7">
+              <div class="client-logo">
+                <img
+                  class="client-brand client-brand--r7"
+                  src="assets/clients/r7.png"
+                  alt="R7"
+                >
+              </div>
+
+              <span
+                class="client-name"
+                data-pt="R7"
+                data-en="R7"
+              >
+                R7
+              </span>
+            </article>
+
+            <article class="client-card client-card--times-brasil">
+              <div class="client-logo">
+                <img
+                  class="client-brand client-brand--times-brasil"
+                  src="assets/clients/times-brasil.png"
+                  alt="Times Brasil CNBC"
+                >
+              </div>
+
+              <span
+                class="client-name"
+                data-pt="Times Brasil CNBC"
+                data-en="Times Brasil CNBC"
+              >
+                Times Brasil CNBC
+              </span>
+            </article>
+          </div>
+
+          <p class="client-more"
+
+             data-pt="Além de outros projetos em diferentes contextos."
+             data-en="Alongside other projects across different contexts.">
+            Além de outros projetos em diferentes contextos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects-section">
+      <div class="container">
+        <div class="section-heading"><span>03</span><span data-pt="Projetos selecionados"
+            data-en="Selected projects">Projetos selecionados</span></div>
+        <div class="projects-intro">
+        <h2
+          data-pt="Alguns projetos que desenvolvi em diferentes áreas."
+          data-en="Some projects I have built across different areas."
+        >
+          Alguns projetos que desenvolvi em diferentes áreas.
+        </h2>
+          <p data-pt="Eles passam por áreas diferentes, como performance web, IA local, segurança, educação, aplicações desktop e arquitetura headless."
+            data-en="They cover different areas such as web performance, local AI, security, education, desktop applications and headless architecture.">
+            Eles passam por áreas diferentes, como performance web, IA local, segurança, educação, aplicações desktop e
+            arquitetura headless.</p>
+        </div>
+
+        <div class="project-stack">
+          <article class="project project-pulse">
+            <div class="project-media pulse-media" aria-label="PulseVitals visual">
+              <div class="pulse-window">
+                <div class="pulse-head"><span>PulseVitals</span><small>weekly report / 06:15</small></div>
+                <div class="pulse-metrics">
+                  <div><small>LCP</small><b>2.1s</b><i></i></div>
+                  <div><small>CLS</small><b>0.03</b><i></i></div>
+                  <div><small>INP</small><b>148ms</b><i></i></div>
+                </div>
+                <div class="pulse-chart"><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="pulse-footer"><span>mobile + desktop</span><span>CrUX + PSI</span><span>multi-site</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker">01 / PERFORMANCE</div>
+              <h3>PulseVitals</h3>
+              <p data-pt="Toolkit em PHP + WordPress para acompanhar Core Web Vitals com dados de laboratório e de campo, manter histórico e gerar relatórios semanais automaticamente."
+                data-en="A PHP + WordPress toolkit for tracking Core Web Vitals with lab and field data, storing history and automatically generating weekly reports.">
+                Toolkit em PHP + WordPress para acompanhar Core Web Vitals com dados de laboratório e de campo, manter
+                histórico e gerar relatórios semanais automaticamente.</p>
+              <ul class="project-facts">
+                <li data-pt="Coleta PageSpeed Insights e CrUX" data-en="Collects PageSpeed Insights and CrUX data">
+                  Coleta PageSpeed Insights e CrUX</li>
+                <li data-pt="Monitoramento multi-site em mobile e desktop"
+                  data-en="Multi-site monitoring for mobile and desktop">Monitoramento multi-site em mobile e desktop
+                </li>
+                <li data-pt="CLI + MySQL + API JSON + plugin WordPress"
+                  data-en="CLI + MySQL + JSON API + WordPress plugin">CLI + MySQL + API JSON + plugin WordPress</li>
+                <li data-pt="Automação semanal por cron e envio opcional por e-mail"
+                  data-en="Weekly cron automation with optional email delivery">Automação semanal por cron e envio
+                  opcional por e-mail</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/php" alt="" aria-hidden="true">PHP</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/wordpress" alt="" aria-hidden="true">WordPress</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/mysql" alt="" aria-hidden="true">MySQL</span>
+                <span>CrUX</span>
+                <span>PageSpeed</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid" href="https://github.com/DFelps/pulse-vitals"
+                  target="_blank" rel="noreferrer" data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project project-lyra">
+            <a class="project-media image-media" href="https://www.youtube.com/watch?v=UCMlY2T9Xac" target="_blank"
+              rel="noreferrer"><img src="assets/projects/lyra-pt.png" data-src-pt="assets/projects/lyra-pt.png"
+                data-src-en="assets/projects/lyra-en.png" data-alt-pt="Lyra — assistente de IA local"
+                data-alt-en="Lyra — local AI assistant" alt="Lyra — assistente de IA local"><span class="media-badge"
+                data-pt="Abrir demo ▶" data-en="Open demo ▶">Abrir demo ▶</span></a>
+            <div class="project-content">
+              <div class="project-kicker">02 / LOCAL AI</div>
+              <h3>Lyra Companion</h3>
+              <p data-pt="Experimento de assistente local que combina LLM, voz, memória e presença visual no desktop sem depender de serviços de nuvem para o núcleo da interação."
+                data-en="A local assistant experiment combining LLMs, voice, memory and desktop visual presence without relying on cloud services for the core interaction.">
+                Experimento de assistente local que combina LLM, voz, memória e presença visual no desktop sem depender
+                de serviços de nuvem para o núcleo da interação.</p>
+              <ul class="project-facts">
+                <li data-pt="Inferência local com Ollama e modelo isolado da camada de UI"
+                  data-en="Local inference with Ollama and an LLM layer isolated from the UI">Inferência local com
+                  Ollama e modelo isolado da camada de UI</li>
+                <li data-pt="F5-TTS, fila assíncrona de áudio e base de lipsync"
+                  data-en="F5-TTS, async audio queue and lipsync foundation">F5-TTS, fila assíncrona de áudio e base de
+                  lipsync</li>
+                <li data-pt="Overlay Electron transparente, HUD e estados visuais"
+                  data-en="Transparent Electron overlay, HUD and visual states">Overlay Electron transparente, HUD e
+                  estados visuais</li>
+                <li data-pt="Memória e personalidade locais em arquitetura modular"
+                  data-en="Local memory and personality in a modular architecture">Memória e personalidade locais em
+                  arquitetura modular</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/python" alt="" aria-hidden="true">Python</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/ollama" alt="" aria-hidden="true">Ollama</span>
+                <span>F5-TTS</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/electron" alt="" aria-hidden="true">Electron</span>
+                <span>Local AI</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid"
+                  href="https://github.com/DFelps/lyra-companion" target="_blank" rel="noreferrer"
+                  data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a><a class="project-button"
+                  href="https://www.youtube.com/watch?v=UCMlY2T9Xac" target="_blank" rel="noreferrer"
+                  data-pt="Ver demo ▶" data-en="Watch demo ▶">Ver demo ▶</a></div>
+            </div>
+          </article>
+
+          <article class="project project-syntax">
+            <a class="project-media image-media" href="https://www.youtube.com/watch?v=W0aic1vWE2E" target="_blank"
+              rel="noreferrer"><img src="assets/projects/syntax-lab-pt.png"
+                data-src-pt="assets/projects/syntax-lab-pt.png" data-src-en="assets/projects/syntax-lab-en.png"
+                data-alt-pt="Syntax Lab — plataforma interativa de estudos"
+                data-alt-en="Syntax Lab — interactive learning platform"
+                alt="Syntax Lab — plataforma interativa de estudos"><span class="media-badge" data-pt="Abrir demo ▶"
+                data-en="Open demo ▶">Abrir demo ▶</span></a>
+            <div class="project-content">
+              <div class="project-kicker">03 / LEARNING PLATFORM</div>
+              <h3>Syntax Lab</h3>
+              <p data-pt="Plataforma de estudo construída para aprender programação escrevendo e testando código, em vez de depender apenas de conteúdo passivo ou múltipla escolha."
+                data-en="A learning platform built around writing and testing code instead of relying only on passive content or multiple-choice exercises.">
+                Plataforma de estudo construída para aprender programação escrevendo e testando código, em vez de
+                depender apenas de conteúdo passivo ou múltipla escolha.</p>
+              <ul class="project-facts">
+                <li data-pt="Playgrounds, desafios curtos, quizzes e feedback automático"
+                  data-en="Playgrounds, short challenges, quizzes and automated feedback">Playgrounds, desafios curtos,
+                  quizzes e feedback automático</li>
+                <li data-pt="Trilha básica de lógica, C, HTML, CSS, JavaScript, PHP e Git"
+                  data-en="Basic path covering logic, C, HTML, CSS, JavaScript, PHP and Git">Trilha básica de lógica, C,
+                  HTML, CSS, JavaScript, PHP e Git</li>
+                <li data-pt="Progresso local e interface PT/EN" data-en="Local progress tracking and PT/EN interface">
+                  Progresso local e interface PT/EN</li>
+                <li data-pt="Lógica testável com Vitest e estrutura TypeScript-first"
+                  data-en="Testable logic with Vitest and a TypeScript-first structure">Lógica testável com Vitest e
+                  estrutura TypeScript-first</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">SvelteKit</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">Svelte 5</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/typescript" alt="" aria-hidden="true">TypeScript</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" aria-hidden="true">Tailwind</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/vitest" alt="" aria-hidden="true">Vitest</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid" href="https://github.com/DFelps/syntax-lab"
+                  target="_blank" rel="noreferrer" data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a><a
+                  class="project-button" href="https://www.youtube.com/watch?v=W0aic1vWE2E" target="_blank"
+                  rel="noreferrer" data-pt="Ver demo ▶" data-en="Watch demo ▶">Ver demo ▶</a></div>
+            </div>
+          </article>
+
+          <article class="project project-vaulty">
+            <a class="project-media image-media" href="https://www.youtube.com/watch?v=5r2sIOo-qII" target="_blank"
+              rel="noreferrer"><img src="assets/projects/vaulty-pt.png" data-src-pt="assets/projects/vaulty-pt.png"
+                data-src-en="assets/projects/vaulty-en.png" data-alt-pt="Vaulty — gerenciador de senhas local"
+                data-alt-en="Vaulty — local password manager" alt="Vaulty — gerenciador de senhas local"><span
+                class="media-badge" data-pt="Abrir demo ▶" data-en="Open demo ▶">Abrir demo ▶</span></a>
+            <div class="project-content">
+              <div class="project-kicker">04 / SECURITY · DESKTOP</div>
+              <h3>Vaulty</h3>
+              <p data-pt="Gerenciador de senhas desktop local-first: o cofre fica no dispositivo e o acesso é protegido por chave mestra, criptografia local e controles de sessão."
+                data-en="A local-first desktop password manager: the vault stays on-device and access is protected by a master key, local encryption and session controls.">
+                Gerenciador de senhas desktop local-first: o cofre fica no dispositivo e o acesso é protegido por chave
+                mestra, criptografia local e controles de sessão.</p>
+              <ul class="project-facts">
+                <li data-pt="Cofre criptografado com better-sqlite3 e Node Crypto"
+                  data-en="Encrypted vault using better-sqlite3 and Node Crypto">Cofre criptografado com better-sqlite3
+                  e Node Crypto</li>
+                <li data-pt="Bloqueio automático por inatividade" data-en="Automatic lock after inactivity">Bloqueio
+                  automático por inatividade</li>
+                <li data-pt="Recovery key, backups criptografados e gerador de senhas"
+                  data-en="Recovery key, encrypted backups and password generator">Recovery key, backups criptografados
+                  e gerador de senhas</li>
+                <li data-pt="Backup opcional via Google Drive" data-en="Optional Google Drive backup">Backup opcional
+                  via Google Drive</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/electron" alt="" aria-hidden="true">Electron</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/vuedotjs" alt="" aria-hidden="true">Vue 3</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/vite" alt="" aria-hidden="true">Vite</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/sqlite" alt="" aria-hidden="true">SQLite</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/nodedotjs" alt="" aria-hidden="true">Node Crypto</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid" href="https://github.com/DFelps/Vaulty"
+                  target="_blank" rel="noreferrer" data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a><a
+                  class="project-button" href="https://www.youtube.com/watch?v=5r2sIOo-qII" target="_blank"
+                  rel="noreferrer" data-pt="Ver demo ▶" data-en="Watch demo ▶">Ver demo ▶</a></div>
+            </div>
+          </article>
+
+          <article class="project project-glyph">
+            <a class="project-media image-media" href="https://www.youtube.com/watch?v=PQ78WjWcvyk" target="_blank"
+              rel="noreferrer"><img src="assets/projects/glyphbound-pt.png"
+                data-src-pt="assets/projects/glyphbound-pt.png" data-src-en="assets/projects/glyphbound-en.png"
+                data-alt-pt="Glyphbound — RPG ASCII de progressão" data-alt-en="Glyphbound — ASCII progression RPG"
+                alt="Glyphbound — RPG ASCII de progressão"><span class="media-badge" data-pt="Abrir gameplay ▶"
+                data-en="Open gameplay ▶">Abrir gameplay ▶</span></a>
+            <div class="project-content">
+              <div class="project-kicker">05 / GAME SYSTEMS</div>
+              <h3>Glyphbound</h3>
+              <p data-pt="RPG ASCII de progressão e loot em que o combate é assistido e o foco está em farming, equipamentos, raridades, economia e descoberta de conteúdo."
+                data-en="An ASCII loot-progression RPG where combat is assisted and the focus is farming, gear, rarities, economy and content discovery.">
+                RPG ASCII de progressão e loot em que o combate é assistido e o foco está em farming, equipamentos,
+                raridades, economia e descoberta de conteúdo.</p>
+              <ul class="project-facts">
+                <li data-pt="Loop de área → combate → materiais → upgrade → boss"
+                  data-en="Area → combat → materials → upgrades → boss progression loop">Loop de área → combate →
+                  materiais → upgrade → boss</li>
+                <li data-pt="Cinco raridades e itens Unique com atributos aleatórios"
+                  data-en="Five rarity tiers and Unique items with randomized stats">Cinco raridades e itens Unique com
+                  atributos aleatórios</li>
+                <li data-pt="Forge com estoque rotativo a cada 2 minutos"
+                  data-en="Forge market with stock rotating every 2 minutes">Forge com estoque rotativo a cada 2 minutos
+                </li>
+                <li data-pt="Codex, autosave em localStorage e progressão por regiões"
+                  data-en="Codex, localStorage autosave and region-based progression">Codex, autosave em localStorage e
+                  progressão por regiões</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">SvelteKit</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/typescript" alt="" aria-hidden="true">TypeScript</span>
+                <span>CSS</span>
+                <span>localStorage</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid" href="https://github.com/DFelps/glyphbound"
+                  target="_blank" rel="noreferrer" data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a><a
+                  class="project-button" href="https://www.youtube.com/watch?v=PQ78WjWcvyk" target="_blank"
+                  rel="noreferrer" data-pt="Ver gameplay ▶" data-en="Watch gameplay ▶">Ver gameplay ▶</a></div>
+            </div>
+          </article>
+
+          <article class="project project-news">
+            <a class="project-media image-media" href="https://www.youtube.com/watch?v=JIvyoeyBwBo" target="_blank"
+              rel="noreferrer"><img src="assets/projects/news-atlas-pt.png"
+                data-src-pt="assets/projects/news-atlas-pt.png" data-src-en="assets/projects/news-atlas-en.png"
+                data-alt-pt="Atlas Journal — portal editorial headless"
+                data-alt-en="Atlas Journal — headless editorial portal"
+                alt="Atlas Journal — portal editorial headless"><span class="media-badge" data-pt="Abrir demo ▶"
+                data-en="Open demo ▶">Abrir demo ▶</span></a>
+            <div class="project-content">
+              <div class="project-kicker">06 / HEADLESS CMS</div>
+              <h3>Atlas Journal <small>news-atlas</small></h3>
+              <p data-pt="Portal editorial desacoplado: WordPress cuida do conteúdo e do fluxo editorial, enquanto Next.js assume a camada pública, performance, SEO e experiência de navegação."
+                data-en="A decoupled editorial portal: WordPress handles content and editorial workflows while Next.js owns the public layer, performance, SEO and navigation experience.">
+                Portal editorial desacoplado: WordPress cuida do conteúdo e do fluxo editorial, enquanto Next.js assume
+                a camada pública, performance, SEO e experiência de navegação.</p>
+              <ul class="project-facts">
+                <li data-pt="Home modular, categorias, busca, artigos e colunistas"
+                  data-en="Modular homepage, categories, search, articles and columnists">Home modular, categorias,
+                  busca, artigos e colunistas</li>
+                <li data-pt="SSR / SSG / ISR e estratégia de cache/revalidate"
+                  data-en="SSR / SSG / ISR with caching and revalidation">SSR / SSG / ISR e estratégia de
+                  cache/revalidate</li>
+                <li data-pt="API REST e endpoint customizado para a home"
+                  data-en="REST API plus a custom homepage endpoint">API REST e endpoint customizado para a home</li>
+                <li data-pt="Separação clara entre gestão editorial e apresentação"
+                  data-en="Clear separation between editorial management and presentation">Separação clara entre gestão
+                  editorial e apresentação</li>
+              </ul>
+              <div class="stack-tags">
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/nextdotjs/000/fff" alt="" aria-hidden="true">Next.js</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/react" alt="" aria-hidden="true">React</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/sass" alt="" aria-hidden="true">SCSS</span>
+                <span><img class="stack-icon" src="https://cdn.simpleicons.org/wordpress" alt="" aria-hidden="true">WordPress</span>
+                <span>REST API</span>
+              </div>
+              <div class="project-actions"><a class="project-button solid" href="https://github.com/DFelps/news-atlas"
+                  target="_blank" rel="noreferrer" data-pt="Ver código ↗" data-en="View code ↗">Ver código ↗</a><a
+                  class="project-button" href="https://www.youtube.com/watch?v=JIvyoeyBwBo" target="_blank"
+                  rel="noreferrer" data-pt="Ver demo ▶" data-en="Watch demo ▶">Ver demo ▶</a></div>
+            </div>
+          </article>
+        </div>
+
+        <section class="more-projects">
+          <div class="subheading">
+            <h3 data-pt="Outros repositórios" data-en="Other repositories">Outros repositórios</h3><a
+              href="https://github.com/DFelps?tab=repositories" target="_blank" rel="noreferrer"
+              data-pt="Ver todos no GitHub ↗" data-en="View all on GitHub ↗">Ver todos no GitHub ↗</a>
+          </div>
+          <div class="repo-grid">
+            <a href="https://github.com/DFelps/sos_fullstack" target="_blank" rel="noreferrer">
+              <div class="repo-stack">
+                <span><img src="https://cdn.simpleicons.org/php" alt="" aria-hidden="true">PHP</span>
+                <span><img src="https://cdn.simpleicons.org/vuedotjs" alt="" aria-hidden="true">Vue</span>
+                <span><img src="https://cdn.simpleicons.org/laravel" alt="" aria-hidden="true">Laravel</span>
+                <span><img src="https://cdn.simpleicons.org/mysql" alt="" aria-hidden="true">MySQL</span>
+              </div>
+              <strong>sos_fullstack</strong>
+              <p data-pt="Sistema full stack de gestão de estoque." data-en="Full-stack inventory management system.">
+                Sistema full stack de gestão de estoque.</p>
+            </a>
+            <a href="https://github.com/DFelps/OpenBallot" target="_blank" rel="noreferrer">
+              <div class="repo-stack">
+                <span><img src="https://cdn.simpleicons.org/python" alt="" aria-hidden="true">Python</span>
+                <span><img src="https://cdn.simpleicons.org/flask" alt="" aria-hidden="true">Flask</span>
+                <span>API</span>
+              </div>
+              <strong>OpenBallot</strong>
+              <p data-pt="API para coleta, normalização e entrega de dados cívicos."
+                data-en="API for collecting, normalizing and serving civic data.">API para coleta, normalização e
+                entrega de dados cívicos.</p>
+            </a>
+            <a href="https://github.com/DFelps/frame-market-flask" target="_blank" rel="noreferrer">
+              <div class="repo-stack">
+                <span><img src="https://cdn.simpleicons.org/python" alt="" aria-hidden="true">Python</span>
+                <span><img src="https://cdn.simpleicons.org/flask" alt="" aria-hidden="true">Flask</span>
+              </div>
+              <strong>frame-market-flask</strong>
+              <p data-pt="Automação para listar itens de valor do Warframe Market."
+                data-en="Automation for listing valuable Warframe Market items.">Automação para listar itens de valor do
+                Warframe Market.</p>
+            </a>
+            <a href="https://github.com/DFelps/setup-wp" target="_blank" rel="noreferrer">
+              <div class="repo-stack">
+                <span><img src="https://cdn.simpleicons.org/gnubash" alt="" aria-hidden="true">Shell</span>
+                <span><img src="https://cdn.simpleicons.org/linux" alt="" aria-hidden="true">Linux</span>
+                <span><img src="https://cdn.simpleicons.org/wordpress" alt="" aria-hidden="true">WordPress</span>
+              </div>
+              <strong>setup-wp</strong>
+              <p data-pt="Setup para configurar projetos WordPress e virtual hosts no Linux."
+                data-en="Setup scripts for WordPress projects and virtual hosts on Linux.">Setup para configurar
+                projetos WordPress e virtual hosts no Linux.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="stack" class="section stack-section">
+      <div class="container">
+        <div class="section-heading light">
+          <span>04</span>
+          <span data-pt="Conhecimentos" data-en="Skills">Conhecimentos</span>
+        </div>
+
+        <div class="stack-layout">
+          <div class="stack-intro">
+            <h2
+              data-pt="Tecnologias que uso em diferentes partes da aplicação."
+              data-en="Technologies I use across different parts of the application."
+            >
+              Tecnologias que uso em diferentes partes da aplicação.
+            </h2>
+
+            <p
+              data-pt="Organizei por contexto para mostrar onde cada tecnologia aparece no meu trabalho e nos meus projetos."
+              data-en="I grouped them by context to show where each technology appears in my work and personal projects."
+            >
+              Organizei por contexto para mostrar onde cada tecnologia aparece no meu trabalho e nos meus projetos.
+            </p>
+          </div>
+
+          <div class="skill-grid">
+            <article class="skill-card">
+              <div class="skill-card-head">
+                <span class="skill-number">01</span>
+                <h3 data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</h3>
+              </div>
+
+              <div class="skill-badges">
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/php" alt="" aria-hidden="true">PHP</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/javascript" alt="" aria-hidden="true">JavaScript</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/typescript" alt="" aria-hidden="true">TypeScript</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/python" alt="" aria-hidden="true">Python</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/ruby" alt="" aria-hidden="true">Ruby</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/laravel" alt="" aria-hidden="true">Laravel</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/rubyonrails" alt="" aria-hidden="true">Ruby on Rails</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/wordpress" alt="" aria-hidden="true">WordPress</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/vuedotjs" alt="" aria-hidden="true">Vue</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/react" alt="" aria-hidden="true">React</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">Svelte</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/svelte" alt="" aria-hidden="true">SvelteKit</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/nextdotjs/000/fff" alt="" aria-hidden="true">Next.js</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/nodedotjs" alt="" aria-hidden="true">Node.js</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/electron" alt="" aria-hidden="true">Electron</span>
+                <span class="skill-badge">APIs</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card-head">
+                <span class="skill-number">02</span>
+                <h3 data-pt="Bancos e performance" data-en="Databases & performance">Bancos e performance</h3>
+              </div>
+
+              <div class="skill-badges">
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/mysql" alt="" aria-hidden="true">MySQL</span>
+                <span class="skill-badge">MariaDB</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/postgresql" alt="" aria-hidden="true">PostgreSQL</span>
+                <span class="skill-badge"><img src="assets/icons/sql-server.svg" alt="" aria-hidden="true">SQL Server</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/sqlite" alt="" aria-hidden="true">SQLite</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/redis" alt="" aria-hidden="true">Redis</span>
+                <span class="skill-badge">EXPLAIN</span>
+                <span class="skill-badge" data-pt="Índices" data-en="Indexes">Índices</span>
+                <span class="skill-badge">Locks</span>
+                <span class="skill-badge">Cache</span>
+                <span class="skill-badge" data-pt="Análise de queries" data-en="Query analysis">Análise de queries</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card-head">
+                <span class="skill-number">03</span>
+                <h3 data-pt="Infraestrutura e ambientes" data-en="Infrastructure & environments">Infraestrutura e ambientes</h3>
+              </div>
+
+              <div class="skill-badges">
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/docker" alt="" aria-hidden="true">Docker</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/linux" alt="" aria-hidden="true">Linux</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/git" alt="" aria-hidden="true">Git</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/googlecloud" alt="" aria-hidden="true">GCP</span>
+                <span class="skill-badge"><img src="assets/icons/aws.svg" alt="" aria-hidden="true">AWS</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/kubernetes" alt="" aria-hidden="true">GKE</span>
+                <span class="skill-badge">Cloud SQL</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/cloudflare" alt="" aria-hidden="true">Cloudflare</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/githubactions" alt="" aria-hidden="true">GitHub Actions</span>
+                <span class="skill-badge"><img src="https://cdn.simpleicons.org/bitbucket" alt="" aria-hidden="true">Bitbucket Pipelines</span>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card-head">
+                <span class="skill-number">04</span>
+                <h3 data-pt="Produção" data-en="Production">Produção</h3>
+              </div>
+
+              <div class="skill-badges">
+                <span class="skill-badge">Deploy</span>
+                <span class="skill-badge" data-pt="Monitoramento" data-en="Monitoring">Monitoramento</span>
+                <span class="skill-badge">Troubleshooting</span>
+                <span class="skill-badge" data-pt="Autenticação" data-en="Authentication">Autenticação</span>
+                <span class="skill-badge" data-pt="Segurança de endpoints" data-en="Endpoint security">Segurança de endpoints</span>
+                <span class="skill-badge" data-pt="Incidentes" data-en="Incidents">Incidentes</span>
+                <span class="skill-badge" data-pt="Manutenção de aplicações" data-en="Application maintenance">Manutenção de aplicações</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-heading"><span>05</span><span data-pt="Contato" data-en="Contact">Contato</span></div>
+          <h2 data-pt="Tem uma vaga, projeto ou problema técnico para conversar?"
+            data-en="Have a role, project or technical problem to discuss?">Tem uma vaga, projeto ou problema técnico
+            para conversar?</h2>
+        </div>
+        <div class="contact-copy">
+          <p data-pt="Você pode entrar em contato comigo por e-mail ou pelas minhas redes profissionais."
+            data-en="You can get in touch with me by email or through my professional profiles.">Você pode entrar em
+            contato comigo por e-mail ou pelas minhas redes profissionais.</p><a class="email-link"
+            href="mailto:daniel.siqueira.dev@outlook.com">daniel.siqueira.dev@outlook.com ↗</a>
+          <div class="inline-links"><a href="https://github.com/DFelps" target="_blank" rel="noreferrer">GitHub ↗</a><a
+              href="https://www.linkedin.com/in/daniel-siqueira-a91aa9203/">LinkedIn ↗</a><a href="#" data-pt="Currículo ↓" data-en="Resume ↓">Currículo ↓</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid"><span>Daniel Siqueira</span><span>Full Stack Developer</span><span>© <span
+          id="year"></span></span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

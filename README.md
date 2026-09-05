@@ -1,2 +1,5 @@
-# daniel-portfolio
-Personal portfolio showcasing my Full Stack development work, selected projects, technical experience and skills.
+# Daniel Siqueira — Full Stack Developer
+
+Personal portfolio.
+
+Portfolio: coming soon.
